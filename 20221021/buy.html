@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAST AND FURIOUS</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: rgb(87, 158, 181);
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    textarea,
+    select,
+    input[type="email"] {
+      font-size: x-large;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+      width: 300px;
+      max-width: 100%;
+    }
+
+    input[type="submit"] {
+      font-size: x-large;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    label {
+      font-size: x-large;
+      color: rgb(55, 77, 34);
+      font-weight: 900;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      font-size: 70px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: rgb(174, 88, 88);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Buy</h1>
+  <form action="https://example.com/checkout" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="phone">Phone number:</label>
+    <input type="tel" id="phone" name="phone"><br>
+    <label for="address">Address:</label>
+    <textarea id="address" name="address"></textarea><br>
+    <label for="payment">Payment method:</label>
+    <select id="payment" name="payment">
+      <option value="credit card">Credit card</option>
+      <option value="paypal">PayPal</option>
+      <option value="cash on delivery">Cash on delivery</option>
+    </select><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback"></textarea><br>
+    <input type="submit" value="Buy">
+  </form>
+</body>
+</html>
